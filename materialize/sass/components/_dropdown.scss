@@ -1,0 +1,76 @@
+@import "variables";
+
+.dropdown-content {
+  @extend .z-depth-1;
+  background-color: #FBB844;
+  margin: 0;
+  display: none;
+  min-width: 150px;
+  max-height: 650px;
+  overflow-y: auto;
+  opacity: 0;
+  position: absolute;
+  top:$navbar-height!important;
+  z-index: 999;
+  will-change: width, height;
+  color: #FCF8FB !important;
+
+
+  li {
+    clear: both;
+    color: #FCF8FB;
+    cursor: pointer;
+    min-height: $dropdown-item-height;
+    line-height: 1.5rem;
+    width: 100%;
+    text-align: left;
+    text-transform: none;
+
+    & a:hover {
+      background-color: #FCF8FB !important;
+      }
+    
+
+    &.divider {
+      min-height: 0;
+      height: 1px;
+
+    }
+
+    & > a, & > span {
+      font-size: 16px;
+      color: #FCF8FB;
+      display: block;
+      line-height: 22px;
+      padding: (($dropdown-item-height - 22) / 2) 16px;
+    }
+
+    & >a:hover{
+      color:#FBB844;
+
+    }
+
+    & > span > label {
+      top: 1px;
+      left: 0;
+      height: 18px;
+    }
+
+    // Icon alignment override
+    & > a > i {
+      height: inherit;
+      line-height: inherit;
+      float: left;
+      margin: 0 24px 0 0;
+      width: 24px;
+    }
+  }
+}
+
+// Input field specificity bugfix
+.input-field.col .dropdown-content [type="checkbox"] + label {
+  top: 1px;
+  left: 0;
+  height: 18px;
+}
+
