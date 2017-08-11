@@ -13,7 +13,10 @@
 
 
 
-$body_back_img: '../img/backgrounds/indexBack.png';
+$body_img: (
+		'index': '../img/backgrounds/indexBack.png',
+		'news' : '../img/backgrounds/indexBack.png'
+	);
 $roboto:"Roboto";
 
 
@@ -23,6 +26,7 @@ body, html{
   min-height: 100%;
   position: relative;
   
+  
 }
 
 
@@ -30,7 +34,7 @@ body, html{
 	width: 100%;
 	height: 100%;
 	overflow:hidden;
-	background: url($body_back_img);
+	background: url(%body_back_img);
 	background: {
 		size: cover;
 		position: center;
@@ -42,7 +46,9 @@ body, html{
 
 .index{
 	@extend %body_class; 
+	map-get($body_img, 'index') @extend %body_back_img;
 }
+
 
 
 // --------------- index page title -------------------
@@ -50,7 +56,7 @@ body, html{
 
 
 
-div#title_lbg_bg{
+div#title_lbg_bg {
 	position: fixed;
 	top:60%;
 	width: 100%;
@@ -85,7 +91,7 @@ div#title_lbg_bg{
 	a i {
 	color:white;
 
-	&:hover {
+	&:hover { 
 		color:$blue;
 		text-decoration: none;
 		}
