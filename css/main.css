@@ -8,8 +8,42 @@ h1 {
 
 h2 {
   font-size: 3.5em !important;
+  font-weight: 400 !important;
+  color: #FCF8FB !important;
+}
+
+h3 {
+  font-size: 7.5em !important;
+  font-weight: 300 !important;
+  color: #FCF8FB !important;
+  letter-spacing: -1px;
+}
+
+h4 {
+  font-size: 3.75em !important;
   font-weight: 300 !important;
   color: #4C88A2 !important;
+  letter-spacing: -1px;
+}
+
+h5 {
+  font-size: 2.6em !important;
+  font-weight: 300 !important;
+  color: #252627 !important;
+  letter-spacing: -1px;
+}
+
+h6 {
+  font-size: 1.16em !important;
+  font-weight: 300 !important;
+  color: #4C88A2 !important;
+  letter-spacing: -1px;
+}
+
+p {
+  font-size: 1.6em !important;
+  font-weight: 400 !important;
+  color: #252627 !important;
   letter-spacing: -1px;
 }
 
@@ -58,4 +92,81 @@ div#title_lbg_bg h2 {
 .social_menu a i:hover {
   color: #4C88A2;
   text-decoration: none;
+}
+
+.social_menu_other {
+  left: 0 !important;
+  position: fixed;
+  height: 100%;
+  margin-top: 50%;
+}
+
+.social_menu_other a i {
+  color: white;
+}
+
+.social_menu_other a i:hover {
+  color: #4C88A2;
+  text-decoration: none;
+}
+
+div#title h4 {
+  padding-top: 2%;
+  width: 100%;
+  margin-bottom: 2%;
+  font-family: "Roboto";
+  color: #4C88A2;
+}
+div#title p {
+  margin-left: 12%;
+  margin-right: 12%;
+  font-family: "Roboto";
+  color: #4C88A2;
+}
+
+.about_best {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 1%;
+  background: url("../img/backgrounds/Downloads-01.png");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.best_blue {
+  background-color: #4C88A2;
+}
+
+.about_best_beograd {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 1%;
+  background: url("../img/backgrounds/erfwef-01.png");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.best_yellow {
+  background-color: #FBB844;
+}
+
+.board {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 1%;
+  background: url("../img/backgrounds/erfwef-01.png");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+div.board img {
+  width: 150px;
+  height: 150px;
+  margin-top: 4%;
+}
+div.board img circle {
+  border-radius: 50%;
 }
