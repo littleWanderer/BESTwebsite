@@ -15,7 +15,7 @@
 
 $body_img: (
 		'index': '../img/backgrounds/indexBack.png',
-		'news' : '../img/backgrounds/indexBack.png'
+		'news' : '../img/backgrounds/news.png'
 	);
 $roboto:"Roboto";
 
@@ -247,3 +247,68 @@ div.board{
 
 	}
 }
+
+//-----------------------------news----------------------
+
+.news{
+
+	@include body_background(map-get($body_img, 'news')); 
+	
+}
+
+.item{
+	padding:5px;
+
+
+}
+#news{
+	width:65%;
+}
+
+
+.owl-carousel {
+  position: relative;
+  .item {
+    position: relative;
+
+    img {
+      position: relative;
+    }
+
+    
+  }
+
+    .owl-controls {
+      position: relative;;
+      top: 0;
+      left: 0;
+      transform: translate(0%,-100%);
+      width: 100%;
+    }
+
+    .owl-nav {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 120%;
+
+      .owl-prev {
+        float: left;
+        background-color:#FFFBFC!important;
+      }
+      .owl-next {
+        float: right;
+        background-color:#FFFBFC!important;
+
+      }
+    }
+
+    
+}
+@media (max-width: 480px){
+	.owl-nav {
+		width: 150%!important;
+	}
+}
+

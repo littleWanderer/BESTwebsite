@@ -7,6 +7,7 @@
   border-radius: 2px;
   @extend .z-depth-1;
   background-color: $card-bg-color;
+  padding:50px;
 }
 
 .card {
@@ -18,9 +19,12 @@
   @extend .z-depth-1;
 
 
+
+
+
   .card-title {
-    font-size: 24px;
-    font-weight: 300;
+    font-size: 18px;
+    font-weight: 320;
     &.activator {
       cursor: pointer;
     }
@@ -46,6 +50,7 @@
       bottom: 0;
       left: 0;
       right: 0;
+
     }
   }
 
@@ -125,7 +130,7 @@
       right: 0;
       top: 0;
       bottom: 0;
-      width: 100%;
+      height: 250px;
     }
 
     .card-title {
@@ -135,21 +140,28 @@
       left: 0;
       max-width: 100%;
       padding: $card-padding;
+      font-size:21px!important;
+
     }
   }
 
   .card-content {
     padding: $card-padding;
     border-radius: 0 0 2px 2px;
+    padding-top:10px!important;
 
     p {
       margin: 0;
       color: inherit;
+      font-size:16px!important;
+      padding-top:5px!important;
+      padding-bottom:0px!important;
     }
     .card-title {
       display: block;
-      line-height: 32px;
+      line-height: 18px;
       margin-bottom: 8px;
+      padding-top:-50px!important;
 
       i {
         line-height: 32px;
@@ -158,13 +170,19 @@
   }
 
   .card-action {
+  img{
+        height:10px!important;
+        width:10px!important;
+        float:left;
+        margin-right:10px;
+
+      }
     &:last-child {
-      border-radius: 0 0 2px 2px;
+      
     }
     position: relative;
     background-color: inherit;
-    border-top: 1px solid rgba(160,160,160,.2);
-    padding: 16px $card-padding;
+    padding: 6px $card-padding;
 
     a:not(.btn):not(.btn-large):not(.btn-floating) {
       color: $card-link-color;
