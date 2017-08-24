@@ -17,6 +17,7 @@ nav {
     }
   }
 
+
   
   @extend .z-depth-1;
   background-color: #FCF8FB;
@@ -131,7 +132,7 @@ nav {
       transition: background-color .3s;
       float: left;
       padding: 0;
-      min-width: 200px !important;
+      min-width: 130px !important;
       text-align: center!important;
 
       &:hover:active {

@@ -79,6 +79,7 @@ div#title_lbg_bg h1 #big_title {
 div#title_lbg_bg h2 {
   padding-left: 20%;
   font-family: "Roboto" !important;
+  color: #4C88A2 !important;
 }
 
 .social_menu {
@@ -97,7 +98,12 @@ div#title_lbg_bg h2 {
 .social_menu_other {
   left: 0 !important;
   position: fixed;
+<<<<<<< HEAD
   top: 40%;
+=======
+  height: 100%;
+  margin-top: 50%;
+>>>>>>> 6cb0efe5f7dc90b871bfd06fe424b6d4ad738e5b
 }
 
 .social_menu_other a i {
@@ -162,13 +168,20 @@ div#title p {
 }
 
 div.board img {
+<<<<<<< HEAD
   width: 9.375em;
   height: 9.375em;
   margin-top: 15%;
+=======
+  width: 150px;
+  height: 150px;
+  margin-top: 4%;
+>>>>>>> 6cb0efe5f7dc90b871bfd06fe424b6d4ad738e5b
 }
 div.board img circle {
   border-radius: 50%;
 }
+<<<<<<< HEAD
 div.board h6 {
   padding-top: 10%;
 }
@@ -184,4 +197,61 @@ div.board h6 {
   font-family: "Roboto";
   font-size: 1.875em;
   font-weight: 300;
+=======
+
+.news {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: url("../img/backgrounds/news.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.item {
+  padding: 5px;
+}
+
+#news {
+  width: 65%;
+}
+
+.owl-carousel {
+  position: relative;
+}
+.owl-carousel .item {
+  position: relative;
+}
+.owl-carousel .item img {
+  position: relative;
+}
+.owl-carousel .owl-controls {
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: translate(0%, -100%);
+  width: 100%;
+}
+.owl-carousel .owl-nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+}
+.owl-carousel .owl-nav .owl-prev {
+  float: left;
+  background-color: #FFFBFC !important;
+}
+.owl-carousel .owl-nav .owl-next {
+  float: right;
+  background-color: #FFFBFC !important;
+}
+
+@media (max-width: 480px) {
+  .owl-nav {
+    width: 150% !important;
+  }
+>>>>>>> 6cb0efe5f7dc90b871bfd06fe424b6d4ad738e5b
 }
