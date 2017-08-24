@@ -30,8 +30,40 @@ h1 {
 
 h2{
 	font-size: $h2-size !important;
+	font-weight: $regular!important;
+	color:$light_primary !important;
+}
+
+h3{
+	font-size: $h3-size !important;
+	font-weight: $light!important;
+	color:$light_primary !important;
+	letter-spacing: -1px;
+}
+
+h4{
+	font-size: $h4-size !important;
 	font-weight: $light!important;
 	color:$blue !important;
 	letter-spacing: -1px;
 }
 
+h5{
+	font-size: $h5-size !important;
+	font-weight: $light!important;
+	color:$dark_primary !important;
+	letter-spacing: -1px;
+}
+
+h6{
+	font-size: $h6-size !important;
+	font-weight: $light!important;
+	color:$blue !important;
+	letter-spacing: -1px;
+}
+p{
+	font-size: $p-size !important;
+	font-weight: $regular!important;
+	color:$dark_primary !important;
+	letter-spacing: -1px;
+}
