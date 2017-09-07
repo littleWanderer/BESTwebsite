@@ -15,7 +15,10 @@
 
 $body_img: (
 		'index': '../img/backgrounds/indexBack.png',
-		'news' : '../img/backgrounds/news.png'
+		'news' : '../img/backgrounds/news.png',
+		'best' : '../img/backgrounds/Downloads-01.png',
+		'bestbg' : '../img/backgrounds/news.png',
+		'board' : '../img/backgrounds/weefs-01.png'
 	);
 $roboto:"Roboto";
 
@@ -123,17 +126,16 @@ div#title_lbg_bg {
   text-decoration: none;
 }
 
-//-----------------------------about us----------------------
+//----------------------------- about us title ----------------------
 
 div#title{
 	
 	h4{
 		
-		padding-top:2%;
+		padding-top: 10%;
+		padding-bottom: 5%;
 		width: 100%;
-		margin-bottom: 2%;
 		font-family: $roboto;
-		color: $blue;
 		}
 
 	p{
@@ -141,123 +143,96 @@ div#title{
 		margin-left: 12%;
 		margin-right: 12%;
 		font-family: $roboto;
-		color: $blue;
+	
 	}
 	}
 
-
-
-
-$about_best_back_img: '../img/backgrounds/Downloads-01.png';
-$roboto:"Roboto";
-
-
-
-%about_best_class{
-	
-	position: relative;
-	overflow:hidden;
-	padding-bottom: 1%;
-	background: url($about_best_back_img);
-	background: {
-		size: 100% 100%;
-		position: center;
-		repeat: no-repeat;
-	};
-
-	
+.about_us_title{
+	padding-bottom: 3%;
 }
+
+
+//----------------- about us background --------------------
+
 
 .about_best{
-	@extend %about_best_class; 
+
+	@include body_background(map-get($body_img, 'best')); 
+	@extend %about_us_background_class;
 }
+
+
+.about_best_beograd{
+
+	@include body_background(map-get($body_img, 'bestbg')); 
+	@extend %about_us_background_class;
+}
+
+
+
+.board{
+
+	@include body_background(map-get($body_img, 'board')); 
+	@extend %about_us_background_class;
+}
+
+%about_us_background_class {
+
+	overflow:hidden;
+	
+	background: {
+
+		size: 100% 100%;
+		position: relative;
+		repeat: no-repeat;
+
+	};
+  
+}
+
 
 
 .best_blue{
 	background-color: $blue;
+		padding: 2% 0%;
 }
 
-
-
-$about_best_beograd_back_img: '../img/backgrounds/erfwef-01.png';
-$roboto:"Roboto";
-
-
-
-%about_best_beograd_class{
-	
-	position: relative;
-	overflow:hidden;
-	padding-bottom: 1%;
-	background: url($about_best_beograd_back_img);
-	background: {
-		size: 100% 100%;
-		position: center;
-		repeat: no-repeat;
-	};
-
-	
-}
-
-.about_best_beograd{
-	@extend %about_best_beograd_class; 
-}
 
 
 .best_yellow{
 	background-color: $yellow;
+	padding: 2% 0%;
+}
+
+
+.io{
+	padding-top: 2%;
+	padding-bottom: 2%;
 }
 
 
 
 
-
-
-$board_back_img: '../img/backgrounds/erfwef-01.png';
-$roboto:"Roboto";
-
-
-
-%board_class{
-	
-	position: relative;
-	overflow:hidden;
-	padding-bottom: 1%;
-	background: url($board_back_img);
-	background: {
-		size: 100% 100%;
-		position: center;
-		repeat: no-repeat;
-	};
-
-	
-}
-
-.board{
-	@extend %board_class; 
+.circle{
+	width: 9.375em;
+	height: 9.375em;  
+		-moz-border-radius: 50%; 
+		-webkit-border-radius: 50%; 
+		border-radius: 50%;
 }
 
 
 div.board{
 	img{
+		width: 9.375em;
+		height: 9.375em;
 
-	width: 9.375em;
-	height: 9.375em;
-	margin-top: 15%;
-	circle{
-		border-radius: 50%;
-	}
-
-
-
-	}
+		}
 
 	h6{
 	padding-top: 10%;
 	}
 }
-
-
 
 
 
@@ -267,7 +242,7 @@ div.board{
     color: white;
     padding: 0.0625em 0.4375em;
     text-align: center;
-    margin: 3.125em 1.25em;
+    margin: 1.25em 1.25em;
     cursor: pointer;
     font-family: $roboto;
 	font-size: 1.875em;
@@ -275,6 +250,29 @@ div.board{
 
 
 }
+
+
+
+ .img-circle:hover {
+    opacity: 0.2; 
+
+}
+
+
+
+ #li_n, #li_t, #li_q, #li_a, #li_e, #li_j{
+  display: none;
+  position: absolute;
+   transform: translate( 60%, -200% );
+  }
+
+ #li_k, #li_m, #li_w, #li_s, #li_r, #li_l{
+  display: none;
+  position: absolute;
+   transform: translate( 220%, -200% );
+  }
+
+
 
 
 //-----------------------------news----------------------

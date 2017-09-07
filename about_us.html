@@ -23,10 +23,11 @@
     		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	   <script src="js/jquery-numerator.js"></script>
+	   <script src="js/board.js"></script>
 
 </head>
 <body>
@@ -105,18 +106,19 @@
 	<div class="col-sm-4" align="center"><h4>BEST</h4></div>
 	<div class="col-sm-4"></div>
 	</div>
-
+<div class="about_us_title">
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lectus metus, faucibus et turpis eget, vehicula hendrerit orci. Pellentesque sodales congue volutpat. Nulla elit ex, semper in nibh eget, rhoncus pharetra nibh. Etiam tincidunt mattis gravida. In id augue nibh. Duis dictum ornare molestie. Nunc non libero sed mi aliquet pretium nec egestas nisi. Quisque at ju</p>
 
-		<p>sto euismod mauris vulputate volutpat nec at massa. Etiam sed lacinia nunc, quis dapibus quam. Maecenas viverra libero eu nibh rhoncus interdum. Duis congue tempor lectus sit amet vestibulum. Duis sagittis dolor eu eros pretium, vel laoreet orci posuere. Phasellus consequat felis in nulla facilisis, ut tincidunt ex mattis. </p>
+		<p>sto euismod mauris vulputate volutpat nec at massa. Etiam sed lacinia nunc, quis dapibus quam. Maecenas viverra libero eu nibh rhoncus interdum. Duis congue tempor lectus sit amet vestibulum. Duis sagittis dolor eu eros pretium, vel laoreet orci posuere. Phasellus consequat felis in nulla facilisis, ut tincidunt ex mattis.</p>
 
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lectus metus, faucibus et turpis eget, vehicula hendrerit orci. Pellentesque sodales congue volutpat. Nulla elit ex, semper in nibh eget, rhoncus pharetra nibh. Etiam tincidunt mattis gravida. In id augue nibh. Duis dictum ornare molestie. Nunc non libero sed mi aliquet pretium nec egestas nisi. Quisque at justo eui</p>
 
 
 </div>
+</div>
 <section class="best_blue">
 <div class="row">
-<div class="container">
+
 <div class="col-sm-4" align="center">
 
 <h3 class="lg">0</h3>
@@ -182,7 +184,7 @@
     <h5>ČLANOVA</h5>
 </div>
 </div>
-</div>
+
 
 </section>
 </section>
@@ -197,17 +199,18 @@
 	<div class="col-sm-4" align="center"><h4>BEST BEOGRAD</h4></div>
 	<div class="col-sm-4"></div>
 	</div>
+	<div class="about_us_title">
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lectus metus, faucibus et turpis eget, vehicula hendrerit orci. Pellentesque sodales congue volutpat. Nulla elit ex, semper in nibh eget, rhoncus pharetra nibh. Etiam tincidunt mattis gravida. In id augue nibh. Duis dictum ornare molestie. Nunc non libero sed mi aliquet pretium nec egestas nisi. Quisque at ju</p>
 
 		<p>sto euismod mauris vulputate volutpat nec at massa. Etiam sed lacinia nunc, quis dapibus quam. Maecenas viverra libero eu nibh rhoncus interdum. Duis congue tempor lectus sit amet vestibulum. Duis sagittis dolor eu eros pretium, vel laoreet orci posuere. Phasellus consequat felis in nulla facilisis, ut tincidunt ex mattis. </p>
 
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lectus metus, faucibus et turpis eget, vehicula hendrerit orci. Pellentesque sodales congue volutpat. Nulla elit ex, semper in nibh eget, rhoncus pharetra nibh. Etiam tincidunt mattis gravida. In id augue nibh. Duis dictum ornare molestie. Nunc non libero sed mi aliquet pretium nec egestas nisi. Quisque at justo eui</p>
 
-
+</div>
 </div>
 <section class="best_yellow">
 <div class="row">
-<div class="container">
+
 <div class="col-sm-4" align="center">
 <h3 class="lg">0</h3>
 <script>
@@ -272,46 +275,65 @@
 <h5>ČLANOVA</h5>
 </div>
 </div>
-</div>
+
 </section>
 </section>
 
 <section>
+		<h4 align="center" class="io">IZVRSNI ODBOR 2016/2017</h4>
+</section>
+
+<section>
 	<div class="board">
-	<h4 align="center">IZVRSNI ODBOR 2016/2017</h4>
+
 
 	<section>
 	<div class="col-sm-2"></div>
+
+
 	<div class="col-sm-2" align="center">
-
-		<img class="img-circle" src="img/macka.jpg" id="slika">
-		<h6 align="center" id="ime">IME I PREZIME</h6>
-		<p align="center" id="funkcija">POZICIJA</p>
-
-
+	<div class="circle" onmouseover="prikazi('li_n', 'li_k')" onmouseout="sakrij('li_n', 'li_k')">
+		<img class="img-circle" src="img/macka.jpg" id="image">
+		<a href="www.linkedin.com"><i class="fa fa-linkedin-square fa-3x" id="li_n"></i></a>
+		<a href="www.linkedin.com"><i class="fa fa-envelope-square fa-3x" id="li_k"></i></a>
 	</div>
 
+		<h6 align="center" id="ime">IME I PREZIME</h6>
+		<p align="center" id="pozicija">POZICIJA</p>
+	</div>
+
+
 	<div class="col-sm-2" align="center">
-		<img class="img-circle" src="img/macka.jpg">
-		<h6 align="center">IME I PREZIME</h6>
-		<p align="center">POZICIJA</p>
+	<div class="circle" onmouseover="prikazi('li_t', 'li_m')" onmouseout="sakrij('li_t', 'li_m')">
+		<img class="img-circle" src="img/macka.jpg" id="image1">
+		<a href="www.linkedin.com"><i class="fa fa-linkedin-square fa-3x" id="li_t"></i></a>
+		<a href="www.linkedin.com"><i class="fa fa-envelope-square fa-3x" id="li_m"></i></a>
+	</div>
+		<h6 align="center" id="ime1">IME I PREZIME</h6>
+		<p align="center" id="pozicija1">POZICIJA</p>
 	</div>
 	
-
-
 			
 	<div class="col-sm-2" align="center">
-		<img class="img-circle" src="img/macka.jpg">
-		<h6 align="center">IME I PREZIME</h6>
-		<p align="center">POZICIJA</p>
+	<div class="circle" onmouseover="prikazi('li_q', 'li_w')" onmouseout="sakrij('li_q', 'li_w')">
+		<img class="img-circle" src="img/macka.jpg" id="image2">
+		<a href="www.linkedin.com"><i class="fa fa-linkedin-square fa-3x" id="li_q"></i></a>
+		<a href="www.linkedin.com"><i class="fa fa-envelope-square fa-3x" id="li_w"></i></a>
+	</div>
+		<h6 align="center" id="ime2">IME I PREZIME</h6>
+		<p align="center" id="pozicija2">POZICIJA</p>
 	</div>
 
 
 			
 	<div class="col-sm-2" align="center">
-		<img class="img-circle" src="img/macka.jpg">
-		<h6 align="center">IME I PREZIME</h6>
-		<p align="center">POZICIJA</p>
+	<div class="circle" onmouseover="prikazi('li_a', 'li_s')" onmouseout="sakrij('li_a', 'li_s')">
+		<img class="img-circle" src="img/macka.jpg" id="image3">
+		<a href="www.linkedin.com"><i class="fa fa-linkedin-square fa-3x" id="li_a"></i></a>
+		<a href="www.linkedin.com"><i class="fa fa-envelope-square fa-3x" id="li_s"></i></a>
+	</div>
+		<h6 align="center" id="ime3">IME I PREZIME</h6>
+		<p align="center" id="pozicija3">POZICIJA</p>
 	</div>
 
 <div class="col-sm-2"></div>
@@ -320,17 +342,27 @@
 
 	
 	<div class="col-sm-2" align="center">
-		<img class="img-circle" src="img/macka.jpg">
-		<h6 align="center">IME I PREZIME</h6>
-		<p align="center">POZICIJA</p>
+	<div class="circle" onmouseover="prikazi('li_e', 'li_r')" onmouseout="sakrij('li_e', 'li_r')">
+		<img class="img-circle" src="img/macka.jpg" id="image4">
+		<a href="www.linkedin.com"><i class="fa fa-linkedin-square fa-3x" id="li_e"></i></a>
+		<a href="www.linkedin.com"><i class="fa fa-envelope-square fa-3x" id="li_r"></i></a>
+	</div>
+		<h6 align="center" id="ime4">IME I PREZIME</h6>
+		<p align="center" id="pozicija4">POZICIJA</p>
 	</div>
 
 
 			
 	<div class="col-sm-2" align="center">
-		<img class="img-circle" src="img/macka.jpg">
-		<h6 align="center">IME I PREZIME</h6>
-		<p align="center">POZICIJA</p>
+	<div class="circle" onmouseover="prikazi('li_j', 'li_l')" onmouseout="sakrij('li_j', 'li_l')">
+		<img class="img-circle" src="img/macka.jpg" id="image5">
+		<a href="www.linkedin.com"><i class="fa fa-linkedin-square fa-3x" id="li_j"></i></a>
+		<a href="www.linkedin.com"><i class="fa fa-envelope-square fa-3x" id="li_l"></i></a>
+	</div>
+		<h6 align="center" id="ime5">IME I PREZIME</h6>
+		<p align="center" id="pozicija5">POZICIJA</p>
+
+
 	</div>
 <div class="col-sm-4"></div>
 	</section>
@@ -341,10 +373,11 @@
 
 <div class="col-sm-12" align="center">
 <div class="proba">
-<button class="button">IO 2013/2014</button>
-<button class="button">IO 2014/2015</button>
-<button class="button">IO 2015/2016</button>
-<button class="button">IO 2016/2017</button>
+<button id="clickme" class="button" onclick="myFunction3();">IO 2013/2014</button>
+<button id="clickme" class="button" onclick="myFunction2();">IO 2014/2015</button>
+<button id="clickme" class="button" onclick="myFunction1();">IO 2015/2016</button>
+<button id="clickme" class="button" onclick="myFunction();">IO 2016/2017</button>
+
 </div>
 </div>
 </section>
@@ -409,7 +442,6 @@
 		<script type="text/javascript" srce="bootstrap/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/custom.js"></script>
 
-		<script type="text/javascript" src="js/jquery.countTo.js"></script>
 
 
 </body>
