@@ -4018,7 +4018,7 @@ nav ul a span.badge {
 nav {
   font-family: "Roboto" !important;
   box-shadow: none !important;
-  background-color: #FCF8FB;
+  background-color: transparent;
   width: 100%;
   height: 56px;
   line-height: 56px;

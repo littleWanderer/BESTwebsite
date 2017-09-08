@@ -63,10 +63,55 @@ body, html{
 #theList, #theList_projects, #theList_partners{
 	li a{
 		margin-left: 20px;
+		color: $yellow;
 	}
 }
 
 
+// ---- social media buttons ---
+
+#social_mobile {
+	text-align: center;
+	a{
+		display: inline;
+		
+		i:hover{
+			color: $yellow;
+		};
+	}
+}
+
+
+// ------- navbar active tab ----
+
+#active_tab_nav{
+	background-color: $yellow;
+	a{
+		color: $light_primary;
+	}
+}
+
+// --- navbar log in language button ----
+
+li#log_lang_tab{
+	display: block !important;
+	width:150px;
+	 a{
+	 	height: 33px;
+	 	width: inherit;
+	 	text-align: center;
+
+	 	line-height: 33px;
+	 }
+	 a:first-child{
+	 	background-color: $yellow;
+	 	margin-bottom: 4px;
+	 }
+	 a:nth-child(2){
+	 	background-color: $blue !important;
+	 }
+
+}
 
 
 // --------------- index page title -------------------
@@ -98,7 +143,7 @@ div#title_lbg_bg {
 
 
 
-// --------------- social side bar --------------
+// --------------- social side bar one page--------------
 
 	
 .social_menu{
@@ -118,12 +163,16 @@ div#title_lbg_bg {
 	
 }
 
-// --------------- social side bar other pages--------------
+// --------------- social side bar scrolling pages --------------
 
 .social_menu_other {
   left: 0 !important;
   position: fixed;
   top: 40%;
+
+  ul li{
+  	margin-bottom: 2px;
+  }
 
   a  {
   	i 
@@ -140,7 +189,9 @@ div#title_lbg_bg {
 
 
 
-//----------------------------- about us title ----------------------
+//----------------------------- about us ----------------------
+
+// -- title --
 
 div#title{
 	
@@ -166,7 +217,7 @@ div#title{
 }
 
 
-//----------------- about us background --------------------
+//-- background --
 
 
 .about_best{
@@ -293,28 +344,28 @@ div.board{
 
 
  #li_n, #li_t, #li_q, #li_a, #li_e, #li_j{
-  display: none;
-  position: absolute;
-  transform: translate( 400%, -500% );
-  color: $dark_primary;
-  
-  &:hover .img-circle:after{
-  	opacity:0.2;
-  };
+	  display: none;
+	  position: absolute;
+	  transform: translate( 400%, -500% );
+	  color: $dark_primary;
+	  
+	  &:hover .img-circle:after{
+	  	opacity:0.2;
+	  };
 
   }
 
  #li_k, #li_m, #li_w, #li_s, #li_r, #li_l{
-  display: none;
-  position: absolute;
-   transform: translate( 500%, -500% );
-   color: $dark_primary;
-  }
+	  display: none;
+	  position: absolute;
+	  transform: translate( 500%, -500% );
+	  color: $dark_primary;
+}
 
  
 
 
-//-----------------------------news----------------------
+//---------------------------- news ----------------------
 
 .news{
 

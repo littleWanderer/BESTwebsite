@@ -69,6 +69,42 @@ body, html {
 
 #theList li a, #theList_projects li a, #theList_partners li a {
   margin-left: 20px;
+  color: #FBB844;
+}
+
+#social_mobile {
+  text-align: center;
+}
+#social_mobile a {
+  display: inline;
+}
+#social_mobile a i:hover {
+  color: #FBB844;
+}
+
+#active_tab_nav {
+  background-color: #FBB844;
+}
+#active_tab_nav a {
+  color: #FCF8FB;
+}
+
+li#log_lang_tab {
+  display: block !important;
+  width: 150px;
+}
+li#log_lang_tab a {
+  height: 33px;
+  width: inherit;
+  text-align: center;
+  line-height: 33px;
+}
+li#log_lang_tab a:first-child {
+  background-color: #FBB844;
+  margin-bottom: 4px;
+}
+li#log_lang_tab a:nth-child(2) {
+  background-color: #4C88A2 !important;
 }
 
 div#title_lbg_bg {
@@ -107,6 +143,9 @@ div#title_lbg_bg h2 {
   left: 0 !important;
   position: fixed;
   top: 40%;
+}
+.social_menu_other ul li {
+  margin-bottom: 2px;
 }
 .social_menu_other a i {
   color: white;
