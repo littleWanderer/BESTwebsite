@@ -13,14 +13,14 @@ h2 {
 }
 
 h3 {
-  font-size: 6.25em !important;
+  font-size: 5.625em !important;
   font-weight: 300 !important;
   color: #FCF8FB !important;
   letter-spacing: -1px;
 }
 
 h4 {
-  font-size: 3.75em !important;
+  font-size: 2.8125em !important;
   font-weight: 300 !important;
   color: #4C88A2 !important;
   letter-spacing: -1px;
@@ -34,14 +34,14 @@ h5 {
 }
 
 h6 {
-  font-size: 1.16em !important;
+  font-size: 1.45em !important;
   font-weight: 300 !important;
   color: #4C88A2 !important;
   letter-spacing: -1px;
 }
 
 p {
-  font-size: 1.6em !important;
+  font-size: 1.25em !important;
   font-weight: 400 !important;
   color: #252627 !important;
   letter-spacing: -1px;
