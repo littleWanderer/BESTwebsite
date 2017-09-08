@@ -54,6 +54,20 @@ body, html{
 }
 
 
+// --------------- side navbar for mobile -------------
+
+.side-nav li a{
+	text-align: left;
+}
+
+#theList, #theList_projects, #theList_partners{
+	li a{
+		margin-left: 20px;
+	}
+}
+
+
+
 
 // --------------- index page title -------------------
 
@@ -104,27 +118,27 @@ div#title_lbg_bg {
 	
 }
 
-// --------------- social side bar other --------------
+// --------------- social side bar other pages--------------
 
 .social_menu_other {
   left: 0 !important;
   position: fixed;
   top: 40%;
 
+  a  {
+  	i 
+  	{
+  		color: white;
+  		&:hover{
+  			color: #4C88A2;
+  			text-decoration: none;
+  		};
+  	}
+  }
 
-
-
-  
 }
 
-.social_menu_other a i {
-  color: white;
-}
 
-.social_menu_other a i:hover {
-  color: #4C88A2;
-  text-decoration: none;
-}
 
 //----------------------------- about us title ----------------------
 
@@ -145,7 +159,7 @@ div#title{
 		font-family: $roboto;
 	
 	}
-	}
+}
 
 .about_us_title{
 	padding-bottom: 3%;
@@ -205,7 +219,7 @@ div#title{
 }
 
 
-.io{
+#io{
 	padding-top: 2%;
 	padding-bottom: 2%;
 }
@@ -219,6 +233,8 @@ div#title{
 		-moz-border-radius: 50%; 
 		-webkit-border-radius: 50%; 
 		border-radius: 50%;
+
+
 }
 
 
@@ -247,15 +263,31 @@ div.board{
     font-family: $roboto;
 	font-size: 1.875em;
 	font-weight: $light;
+	transition: all 0.5s;
+	&:hover{
+		background-color:transparent;
+		color:$yellow;
 
+	};
+
+	&:focus{
+		background-color:$blue;
+		color:$light_primary;
+	};
 
 }
 
 
 
- .img-circle:hover {
-    opacity: 0.2; 
 
+.img-circle{
+	position: relative;
+	transition: all 0.5s;
+	opacity: 1;
+	&:hover{
+		opacity:0.2;
+
+	};
 }
 
 
@@ -263,16 +295,23 @@ div.board{
  #li_n, #li_t, #li_q, #li_a, #li_e, #li_j{
   display: none;
   position: absolute;
-   transform: translate( 60%, -200% );
+  transform: translate( 400%, -500% );
+  color: $dark_primary;
+  
+  &:hover .img-circle:after{
+  	opacity:0.2;
+  };
+
   }
 
  #li_k, #li_m, #li_w, #li_s, #li_r, #li_l{
   display: none;
   position: absolute;
-   transform: translate( 220%, -200% );
+   transform: translate( 500%, -500% );
+   color: $dark_primary;
   }
 
-
+ 
 
 
 //-----------------------------news----------------------

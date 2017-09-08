@@ -63,6 +63,14 @@ body, html {
   background-repeat: no-repeat;
 }
 
+.side-nav li a {
+  text-align: left;
+}
+
+#theList li a, #theList_projects li a, #theList_partners li a {
+  margin-left: 20px;
+}
+
 div#title_lbg_bg {
   position: fixed;
   top: 60%;
@@ -100,11 +108,9 @@ div#title_lbg_bg h2 {
   position: fixed;
   top: 40%;
 }
-
 .social_menu_other a i {
   color: white;
 }
-
 .social_menu_other a i:hover {
   color: #4C88A2;
   text-decoration: none;
@@ -173,7 +179,7 @@ div#title p {
   padding: 2% 0%;
 }
 
-.io {
+#io {
   padding-top: 2%;
   padding-bottom: 2%;
 }
@@ -205,8 +211,22 @@ div.board h6 {
   font-family: "Roboto";
   font-size: 1.875em;
   font-weight: 300;
+  transition: all 0.5s;
+}
+.button:hover {
+  background-color: transparent;
+  color: #FBB844;
+}
+.button:focus {
+  background-color: #4C88A2;
+  color: #FCF8FB;
 }
 
+.img-circle {
+  position: relative;
+  transition: all 0.5s;
+  opacity: 1;
+}
 .img-circle:hover {
   opacity: 0.2;
 }
@@ -214,13 +234,18 @@ div.board h6 {
 #li_n, #li_t, #li_q, #li_a, #li_e, #li_j {
   display: none;
   position: absolute;
-  transform: translate(60%, -200%);
+  transform: translate(400%, -500%);
+  color: #252627;
+}
+#li_n:hover .img-circle:after, #li_t:hover .img-circle:after, #li_q:hover .img-circle:after, #li_a:hover .img-circle:after, #li_e:hover .img-circle:after, #li_j:hover .img-circle:after {
+  opacity: 0.2;
 }
 
 #li_k, #li_m, #li_w, #li_s, #li_r, #li_l {
   display: none;
   position: absolute;
-  transform: translate(220%, -200%);
+  transform: translate(500%, -500%);
+  color: #252627;
 }
 
 .news {
