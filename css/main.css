@@ -73,6 +73,7 @@ body, html {
 }
 
 #social_mobile {
+  display: none;
   text-align: center;
 }
 #social_mobile a {
@@ -109,7 +110,7 @@ li#log_lang_tab a:nth-child(2) {
 
 div#title_lbg_bg {
   position: fixed;
-  top: 60%;
+  bottom: 20px;
   width: 100%;
 }
 div#title_lbg_bg h1 {
@@ -337,8 +338,103 @@ div.board h6 {
   background-color: #FFFBFC !important;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1240px) {
+  /*it's not the standard one, but needs to exist because of the title on the index page */
+  #title_lbg_bg h2 {
+    font-size: 3em !important;
+  }
+}
+@media (max-width: 1060px) {
+  #title_lbg_bg h1 {
+    font-size: 7em !important;
+  }
+  #title_lbg_bg h2 {
+    font-size: 2.5em !important;
+  }
+
+  nav ul li.nav_tab {
+    min-width: 100px !important;
+  }
+
+  ul#dropdown1, ul#dropdown2, ul#dropdown3 {
+    min-width: 100px !important;
+  }
+  ul#dropdown1 li, ul#dropdown2 li, ul#dropdown3 li {
+    min-width: 100px !important;
+  }
+  ul#dropdown1 li a, ul#dropdown2 li a, ul#dropdown3 li a {
+    width: 100px !important;
+    font-size: 12px !important;
+  }
+}
+@media (max-width: 900px) {
+  /*kiboz title */
+  #title_lbg_bg h1 {
+    font-size: 6em !important;
+  }
+  #title_lbg_bg h2 {
+    font-size: 2em !important;
+  }
+}
+@media (max-width: 768px) {
+  #title_lbg_bg h1 {
+    font-size: 5em !important;
+  }
+  #title_lbg_bg h2 {
+    padding-left: 15% !important;
+  }
+}
+@media (max-width: 680px) {
+  #title_lbg_bg {
+    text-align: center;
+  }
+  #title_lbg_bg h1 {
+    font-size: 4em !important;
+  }
+  #title_lbg_bg h2 {
+    padding-left: 20% !important;
+    font-size: 1.5em !important;
+  }
+}
+@media (max-width: 490px) {
+  #title_lbg_bg {
+    text-align: center;
+  }
+  #title_lbg_bg h1 {
+    font-size: 3em !important;
+  }
+  #title_lbg_bg h2 {
+    padding-left: 2% !important;
+    font-size: 1.5em !important;
+  }
+
   .owl-nav {
     width: 150% !important;
+  }
+
+  .social_menu {
+    display: none;
+  }
+
+  #social_mobile {
+    display: inline;
+  }
+}
+@media (max-width: 389px) {
+  #title_lbg_bg h1 {
+    font-size: 2.5em !important;
+  }
+  #title_lbg_bg h2 {
+    padding-left: 0% !important;
+    font-size: 1.2em !important;
+  }
+}
+@media (max-width: 330px) {
+  #title_lbg_bg h1 {
+    font-size: 2.2em !important;
+  }
+  #title_lbg_bg h2 {
+    padding-left: 2% !important;
+    font-size: 1em !important;
   }
 }
