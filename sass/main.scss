@@ -72,13 +72,11 @@ body, html{
 
 #social_mobile {
 	display: none;
-	text-align: center;
+	margin-left: 30px;
+
 	a{
 		display: inline;
-		
-		i:hover{
-			color: $yellow;
-		};
+	
 	}
 }
 
@@ -375,8 +373,6 @@ div#board{
 }
 
 
-
-
 .img-circle{
 	position: relative;
 	transition: all 0.5s;
@@ -509,6 +505,7 @@ div#board{
 
 @media(max-width: 900px) { /*kiboz title */
 	#title_lbg_bg {
+		text-align: center;
 		h1{
 			font-size: 6em !important;
 		}
@@ -516,6 +513,12 @@ div#board{
 		font-size: 2em !important;
 		}
 	}
+
+	nav ul{
+		margin-top: 0px !important;
+	}
+
+
 }
 
 @media(max-width: 768px){
@@ -568,12 +571,15 @@ div#board{
 		width: 150%!important;
 	}
 
-	.social_menu{
+
+
+	.social_menu, .social_menu_other{
 		display: none;
 	}
 
 	#social_mobile{
 		display: inline;
+
 	}
 }
 

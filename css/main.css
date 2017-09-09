@@ -74,13 +74,10 @@ body, html {
 
 #social_mobile {
   display: none;
-  text-align: center;
+  margin-left: 30px;
 }
 #social_mobile a {
   display: inline;
-}
-#social_mobile a i:hover {
-  color: #FBB844;
 }
 
 nav ul li.nav_tab {
@@ -392,11 +389,18 @@ div#board h6 {
 }
 @media (max-width: 900px) {
   /*kiboz title */
+  #title_lbg_bg {
+    text-align: center;
+  }
   #title_lbg_bg h1 {
     font-size: 6em !important;
   }
   #title_lbg_bg h2 {
     font-size: 2em !important;
+  }
+
+  nav ul {
+    margin-top: 0px !important;
   }
 }
 @media (max-width: 768px) {
@@ -439,7 +443,7 @@ div#board h6 {
     width: 150% !important;
   }
 
-  .social_menu {
+  .social_menu, .social_menu_other {
     display: none;
   }
 

@@ -4117,7 +4117,7 @@ nav .nav-title {
   padding: 28px 0;
 }
 nav ul {
-  margin-top: 4px !important;
+  margin-top: 4px;
 }
 nav ul li {
   transition: background-color .3s;
@@ -6758,6 +6758,9 @@ input[type=range]:focus::-ms-fill-upper {
 .side-nav li.active {
   background-color: rgba(0, 0, 0, 0.05);
 }
+.side-nav li a:first-child:hover {
+  background-color: #FBB844;
+}
 .side-nav li > a {
   color: rgba(0, 0, 0, 0.87);
   display: block;
@@ -6766,9 +6769,7 @@ input[type=range]:focus::-ms-fill-upper {
   height: 48px;
   line-height: 48px;
   padding: 0 32px;
-}
-.side-nav li > a:hover {
-  background-color: rgba(0, 0, 0, 0.05);
+  /*&:hover { background-color:#FBB844 }; */
 }
 .side-nav li > a.btn, .side-nav li > a.btn-large, .side-nav li > a.btn-large, .side-nav li > a.btn-flat, .side-nav li > a.btn-floating {
   margin: 10px 15px;
