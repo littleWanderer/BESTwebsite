@@ -83,16 +83,22 @@ body, html {
   color: #FBB844;
 }
 
+nav ul li.nav_tab {
+  margin-right: 2px;
+}
+
 #active_tab_nav {
   background-color: #FBB844;
 }
-#active_tab_nav a {
+#active_tab_nav a.active {
   color: #FCF8FB;
 }
 
 li#log_lang_tab {
   display: block !important;
   width: 150px;
+  margin-right: 4px !important;
+  margin-left: 2px;
 }
 li#log_lang_tab a {
   height: 33px;
