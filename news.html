@@ -35,25 +35,25 @@
 		</head>
 		<body class="news">
 
-		  <nav>
+		   <nav>
 		    <div class="nav-wrapper">
 		      <a href="index.html" class="brand-logo"><img src="img/BEST_BG_Logo.png"></a>
 		      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-		      <ul class="right hide-on-med-and-down">
+		      <ul class="right hide-on-med-and-down ">
 
-		        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">O NAMA</a>
+		        <li class="nav_tab"><a class="dropdown-button" href="about_us.html" data-activates="dropdown1">O NAMA</a>
 		        	<ul id="dropdown1" class="dropdown-content">
 		        	  <li class="divider"></li>
 		        	  <li class="divider"></li>
 		        	  <li class="divider"></li>
-					  <li><a href="#!" class="drop-con-item">BEST</a></li>
-					  <li><a href="#!">BEST BEOGRAD</a></li>
+					  <li><a href="about_us.html#about_best" class="drop-con-item">BEST</a></li>
+					  <li><a href="about_us.html#about_best_bg">BEST BEOGRAD</a></li>
 					  <li class="divider"></li>
-					  <li><a href="#!">IO</a></li>
+					  <li><a href="about_us.html#io">IO</a></li>
 					</ul>
 		        </li>
-		        <li><a href="#">AKTUELNO</a></li>
-		        <li><a class="dropdown-button" href="#!" data-activates="dropdown2">PROJEKTI</a>
+		        <li id="active_tab_nav" class="nav_tab"><a href="#">AKTUELNO</a></li>
+		        <li class="nav_tab"><a class="dropdown-button" href="#!" data-activates="dropdown2">PROJEKTI</a>
 		        	<ul id="dropdown2" class="dropdown-content">
 		        	  <li class="divider"></li>
 		        	  <li class="divider"></li>
@@ -68,8 +68,8 @@
 
 					</ul>
 		        </li>
-		        <li><a href="#">UČLANI SE</a></li>
-		        <li><a class="dropdown-button" href="#" data-activates="dropdown3">PARTNERI</a>
+		        <li class="nav_tab"><a href="#">UČLANI SE</a></li>
+		        <li class="nav_tab"><a class="dropdown-button" href="#" data-activates="dropdown3">PARTNERI</a>
 		        	<ul id="dropdown3" class="dropdown-content">
 		        	  <li class="divider"></li>
 		        	  <li class="divider"></li>
@@ -82,20 +82,47 @@
 					</ul>
 		        </li>
 
-		        <li><a href="#">KONTAKT</a></li>
+		        <li class="nav_tab"><a href="#">KONTAKT</a></li>
 		        
-	        	<li><a href="#">LOG IN </a></li>
-		        	
-		        
+	        	<li id="log_lang_tab">
+	        		<a href="#" >LOG IN</a>
+	        		<a href="#">ENG</a>
+
+	        	</li>	
 		      </ul>
+
+		      <!-- mobile sidebar -->
+
 		      <ul class="side-nav" id="mobile-demo">
-		        <li><a href="#">O NAMA</a></li>
+		      	<li><a href="index.html" style="text-align: center;"><img src="img/BEST_BG_Logo.png"></a></li>
+		        <li>
+		        	<a href="#" id="dropdown_m">O NAMA</a>
+		        	<ul id="theList">
+		        		
+		        	</ul>
+		        </li>
 		        <li><a href="#">AKTUELNO</a></li>
-		        <li><a href="#">PROJEKTI</a></li>
-		        <li><a href="#">PARTNERI</a></li>
+		        <li><a href="#" id="dropdown_m_projects">PROJEKTI</a></li>
+		        	<ul id="theList_projects"></ul>
+		        <li><a href="#">UČLANI SE</a></li>
+		        <li>
+		        	<a href="#" id="dropdown_m_partners">PARTNERI</a>
+		        	<ul id="theList_partners">
+		        		
+		        	</ul>
+		        </li>
 		        <li><a href="#">KONTAKT</a></li>
 		        <li><a href="#">LOG IN</a></li>
+
+		        <div id="social_mobile">
+		        	<a href="https://www.instagram.com/best_belgrade/"><i class="fa fa-instagram"></i></a>
+		        	<a href="https://www.linkedin.com/company-beta/11020375/"><i class="fa fa-linkedin"></i></a>
+		        	<a href="https://twitter.com/best_bg?lang=en"><i class="fa fa-twitter"></i></a>
+		        	<a href="https://www.youtube.com/channel/UCqT8Cw62CbiS_hJ00t7n9Hw"><i class="fa fa-youtube"></i></a>
+		        	<a href="https://www.facebook.com/best.beograd/"><i class="fa fa-facebook"></i></a>
+		        </div>
 		        
+
 		      </ul>
 		    </div>
   		</nav>
