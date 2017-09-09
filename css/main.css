@@ -222,7 +222,7 @@ div.board img circle {
   background-color: #FFFBFC !important;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .owl-nav {
     width: 150% !important;
   }
