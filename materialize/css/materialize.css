@@ -5060,12 +5060,12 @@ button.btn-floating {
   overflow-y: auto;
   opacity: 0;
   position: absolute;
-  top: 70px !important;
+  top: 74px !important;
   z-index: 999;
-  will-change: width, height;
-  color: #FCF8FB !important;
+  will-change: w !important;
 }
 .dropdown-content li {
+  color: #FCF8FB;
   clear: both;
   color: #FCF8FB;
   cursor: pointer;

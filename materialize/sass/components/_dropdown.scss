@@ -10,13 +10,13 @@
   overflow-y: auto;
   opacity: 0;
   position: absolute;
-  top:$navbar-height!important;
+  top:($navbar-height+4px)!important;
   z-index: 999;
-  will-change: width, height;
-  color: #FCF8FB !important;
+  will-change: w !important;
 
 
   li {
+  color: #FCF8FB;
     clear: both;
     color: #FCF8FB;
     cursor: pointer;
