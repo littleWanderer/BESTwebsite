@@ -82,21 +82,29 @@ body, html{
 	}
 }
 
+//------------- navbar ------------
 
-// ------- navbar active tab ----
+nav ul li.nav_tab{
+	margin-right: 2px;
+}
+
+
+// -- navbar active tab --
 
 #active_tab_nav{
 	background-color: $yellow;
-	a{
+	a.active{
 		color: $light_primary;
 	}
 }
 
-// --- navbar log in language button ----
+// --- navbar logIn/language button ----
 
 li#log_lang_tab{
 	display: block !important;
 	width:150px;
+	margin-right: 4px!important;
+	margin-left: 2px;
 	 a{
 	 	height: 33px;
 	 	width: inherit;

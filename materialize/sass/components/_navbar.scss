@@ -2,6 +2,7 @@
 nav {
   font-family: "Roboto" !important;
   box-shadow: none !important;
+
   &.nav-extended {
     height: auto;
 
@@ -126,9 +127,12 @@ nav {
 
   // Navbar Links
   ul {
-    margin: 0;
+    
+    margin-top: 4px !important;
+
 
     li {
+      
       transition: background-color .3s;
       float: left;
       padding: 0;
