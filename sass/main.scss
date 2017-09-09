@@ -218,12 +218,30 @@ div#title{
 }
 
 
-//-- background --
+//-- background ----------------------------------------------------------
+
+.about_us{
+		background-image: url('../img/backgrounds/Downloads-01.png');
+		@extend %about_us_class;
+
+
+}%about_us_class {
+
+	background: {
+
+		size: cover;
+		position: relative;
+		repeat: no-repeat;
+
+	};
+  
+}
+
 
 
 .about_best{
 
-	@include body_background(map-get($body_img, 'best')); 
+	@include body_background(map-get($body_img, 'best'));
 	@extend %about_us_background_class;
 }
 
@@ -239,10 +257,11 @@ div#title{
 .board{
 
 	@include body_background(map-get($body_img, 'board')); 
-	@extend %about_us_background_class;
+	@extend %about_us_board_class;
 }
 
 %about_us_background_class {
+
 
 	overflow:hidden;
 	
@@ -255,6 +274,24 @@ div#title{
 	};
   
 }
+
+%about_us_board_class {
+
+
+	overflow:hidden;
+	
+	background: {
+
+		size:100% 100%;
+		position: bottom right;
+		repeat: no-repeat;
+
+	};
+  
+}
+
+
+
 
 
 
@@ -290,7 +327,7 @@ div#title{
 }
 
 
-div.board{
+div#board{
 	img{
 		width: 9.375em;
 		height: 9.375em;
