@@ -259,8 +259,6 @@ div#title{
 	
 	background: {
 
-	
-
     /* Create the parallax scrolling effect */
  
     attachment: fixed;
@@ -381,20 +379,6 @@ div#board{
 	  color: $dark_primary;
 }
 
-
-.parallax {
-
-
-
-background-image: url('../img/backgrounds/news.png');
-   /* Set a specific height */
-    height: 100%; 
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
  
 
