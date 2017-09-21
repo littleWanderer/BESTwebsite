@@ -23,8 +23,8 @@
 
 
   .card-title {
-    font-size: 18px;
-    font-weight: 320;
+    font-size: 21px!important;
+    font-weight: 500!important;
     &.activator {
       cursor: pointer;
     }
@@ -211,4 +211,7 @@
       display: block;
     }
   }
+}
+.card .card-content {
+  padding:0px 10px 5px 10px!important;
 }
