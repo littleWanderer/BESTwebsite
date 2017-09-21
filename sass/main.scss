@@ -228,22 +228,8 @@ div#title{
 
 //-- background ----------------------------------------------------------
 
-.about_us{
-		background-image: url('../img/backgrounds/Downloads-01.png');
-		@extend %about_us_class;
 
 
-}%about_us_class {
-
-	background: {
-
-		size: cover;
-		position: relative;
-		repeat: no-repeat;
-
-	};
-  
-}
 
 
 
@@ -265,7 +251,7 @@ div#title{
 .board{
 
 	@include body_background(map-get($body_img, 'board')); 
-	@extend %about_us_board_class;
+	@extend %about_us_background_class;
 }
 
 %about_us_background_class {
@@ -275,24 +261,14 @@ div#title{
 	
 	background: {
 
-		size: 100% 100%;
-		position: relative;
-		repeat: no-repeat;
-
-	};
-  
-}
-
-%about_us_board_class {
-
-
-	overflow:hidden;
 	
-	background: {
 
-		size:100% 100%;
-		position: bottom right;
-		repeat: no-repeat;
+    /* Create the parallax scrolling effect */
+ 
+    attachment: fixed;
+    repeat: no-repeat;
+    size: 100% 100%;
+    position: relative;
 
 	};
   
@@ -305,14 +281,15 @@ div#title{
 
 .best_blue{
 	background-color: $blue;
-		padding: 2% 0%;
+		padding: 1% 0%;
 }
 
 
 
 .best_yellow{
 	background-color: $yellow;
-	padding: 2% 0%;
+	padding: 1% 0%;
+
 }
 
 
@@ -406,6 +383,21 @@ div#board{
 	  position: absolute;
 	  transform: translate( 500%, -500% );
 	  color: $dark_primary;
+}
+
+
+.parallax {
+
+
+
+background-image: url('../img/backgrounds/news.png');
+   /* Set a specific height */
+    height: 100%; 
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
  

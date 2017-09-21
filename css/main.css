@@ -178,16 +178,6 @@ div#title p {
   padding-bottom: 3%;
 }
 
-.about_us {
-  background-image: url("../img/backgrounds/Downloads-01.png");
-}
-
-.about_us {
-  background-size: cover;
-  background-position: relative;
-  background-repeat: no-repeat;
-}
-
 .about_best {
   width: 100%;
   height: 100%;
@@ -218,28 +208,23 @@ div#title p {
   background-repeat: no-repeat;
 }
 
-.about_best, .about_best_beograd {
+.about_best, .about_best_beograd, .board {
   overflow: hidden;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: relative;
-  background-repeat: no-repeat;
-}
-
-.board {
-  overflow: hidden;
-  background-size: 100% 100%;
-  background-position: bottom right;
-  background-repeat: no-repeat;
 }
 
 .best_blue {
   background-color: #4C88A2;
-  padding: 2% 0%;
+  padding: 1% 0%;
 }
 
 .best_yellow {
   background-color: #FBB844;
-  padding: 2% 0%;
+  padding: 1% 0%;
 }
 
 #io {
@@ -309,6 +294,16 @@ div#board h6 {
   position: absolute;
   transform: translate(500%, -500%);
   color: #252627;
+}
+
+.parallax {
+  background-image: url("../img/backgrounds/news.png");
+  /* Set a specific height */
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .news {
