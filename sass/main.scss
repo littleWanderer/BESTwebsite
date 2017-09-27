@@ -58,12 +58,21 @@ body, html{
 
 .side-nav li a{
 	text-align: left;
+	text-decoration: none;
 }
 
 #theList, #theList_projects, #theList_partners{
-	li a{
+	li
+	 
+	 a{
 		margin-left: 20px;
 		color: $yellow;
+		&:hover{
+			margin-left:0px;
+			background-color: $yellow;
+			color:$light_primary;
+		};
+
 	}
 }
 
@@ -76,7 +85,9 @@ body, html{
 
 	a{
 		display: inline;
-	
+		i{
+			color: black!important;
+		}
 	}
 }
 
@@ -87,13 +98,29 @@ nav ul li.nav_tab{
 }
 
 
+
+
+nav {
+	-webkit-transition: all 0.4s ease;
+   	transition: all 0.4s ease;
+
+	
+}
+
+
 // -- navbar active tab --
 
 #active_tab_nav{
 	background-color: $yellow;
 	a.active{
 		color: $light_primary;
+	
+		&.scrolling_page{
+			height: 40px!important;
+		}
+		
 	}
+
 }
 
 // --- navbar logIn/language button ----
@@ -240,7 +267,7 @@ div#title{
 
 .about_best_beograd{
 
-	@include body_background(map-get($body_img, 'bestbg')); 
+	@include body_background(map-get($body_img, 'best')); 
 	@extend %about_us_background_class;
 }
 
@@ -248,7 +275,7 @@ div#title{
 
 .board{
 
-	@include body_background(map-get($body_img, 'board')); 
+	@include body_background(map-get($body_img, 'best')); 
 	@extend %about_us_background_class;
 }
 
@@ -334,23 +361,22 @@ div#board{
 	font-size: 1.875em;
 	font-weight: $light;
 	transition: all 0.5s;
-	&:hover{
+	border:1px solid $yellow;
+	&:hover, &:focus{
 		background-color:transparent;
 		color:$yellow;
-
+		border:1px solid $yellow
 	};
 
-	&:focus{
-		background-color:$blue;
-		color:$light_primary;
-	};
-
+	
 }
 
 
-.img-circle{
+.img_square{
+	
 	position: relative;
 	transition: all 0.5s;
+	box-shadow: 3px 3px 5px #888888;
 	opacity: 1;
 	&:hover{
 		opacity:0.2;

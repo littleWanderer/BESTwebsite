@@ -40,7 +40,10 @@
   }
 
   li a:first-child{
-    &:hover { background-color:#FBB844 };
+    &:hover { 
+      background-color:#FBB844
+       
+    };
   }
 
   li > a {

@@ -1,3 +1,25 @@
+//shrink nav when scrolling
+$(window).scroll(function() {
+  if ($(document).scrollTop() > 50) {
+    $('nav').addClass('scrolling_page');
+    $('.nav-wrapper').addClass('scrolling_page');
+    $('#active_tab_nav a.active').addClass('scrolling_page');
+    $('a.brand-logo ').addClass('scrolling_page');
+    $("a.brand-logo img").attr("src", 'img/BEST_BG_Logo.png');
+  } else {
+    $('nav').removeClass('scrolling_page');
+    $('.nav-wrapper').removeClass('scrolling_page');
+     $('#active_tab_nav a.active').removeClass('scrolling_page');
+     $('a.brand-logo ').removeClass('scrolling_page');
+     $("a.brand-logo img").attr("src", 'img/BEST_BG_Logo.png');
+  }
+});
+
+
+
+
+
+// toggle sidebar on mobile
 $( document ).ready(function(){
 
 	 $(".button-collapse").sideNav();
@@ -6,7 +28,7 @@ $( document ).ready(function(){
 
 
 
-// about us sidebar
+// about us sidebar dropdown
 $(document).ready(function() { // better to use $(document).ready(function(){
     $('#dropdown_m').on('click', function() {
 
@@ -17,6 +39,7 @@ $(document).ready(function() { // better to use $(document).ready(function(){
 	        $("ul#theList").append("<li><a href='about_us.html#about_best'>BEST</a></li>");
 	        $("ul#theList").append("<li><a href='about_us.html#about_best_bg'>BEST Beograd</a></li>");
 	        $("ul#theList").append("<li><a href='about_us.html#io'>IO</a></li>");
+	        
 	    }
 	    else{
 	    	$("ul#theList").empty();
