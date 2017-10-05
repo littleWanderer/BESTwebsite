@@ -18,7 +18,7 @@ $body_img: (
 		'news' : '../img/backgrounds/news.png',
 		'best' : '../img/backgrounds/Downloads-01.png',
 		'bestbg' : '../img/backgrounds/news.png',
-		'board' : '../img/backgrounds/weefs-01.png'
+		'project' : '../img/backgrounds/weefs-01.png'
 	);
 $roboto:"Roboto";
 
@@ -464,6 +464,108 @@ div#board{
 
       }
     }
+}
+
+
+
+
+//---------------------------- project ----------------------
+
+.project{
+
+	@include body_background(map-get($body_img, 'project'));
+	@extend %project_background_class;
+}
+
+
+%project_background_class {
+
+
+	overflow:hidden;
+	
+	background: {
+
+    /* Create the parallax scrolling effect */
+ 
+    attachment: fixed;
+    repeat: no-repeat;
+    size: 100% 100%;
+    position: relative;
+
+	};
+  
+}
+
+
+.button_pro{
+	   background-color: $yellow;
+    border: none;
+    color: white;
+    padding: 0.0625em 1.875em;
+    text-align: center;
+    margin: 3.75em 1.25em;
+    cursor: pointer;
+    font-family: $roboto;
+	font-size: 1.875em;
+	font-weight: $light;
+	transition: all 0.5s;
+	border:1px solid $yellow;
+	&:hover, &:focus{
+		background-color:transparent;
+		color:$yellow;
+		border:1px solid $yellow
+	};
+}
+
+
+#pro_img{
+	margin: 1% 1%;
+	width: 12.5em;
+	height: 6.25em; 
+
+}
+
+.pro_blue{
+	background-color: $blue;
+		padding: 0.1875em 0em;
+		margin-top: 3%;
+		margin-bottom: 3%;
+
+		h4{
+		color:$light_primary !important;
+		}
+}
+
+
+.pro_yellow{
+	background-color: $yellow;
+		padding: 0.1875em 0em;
+		margin-top: 3%;
+		margin-bottom: 3%;
+
+		h4{
+		color:$light_primary !important;
+		}
+
+}
+
+.sponzori{
+	h5{
+		color: $yellow !important;
+	}
+}
+
+.gen_pro{
+	width: 12.5em;
+	height: 12.5em;
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
+.pp_pro{
+	width: 12.5em;
+	height: 12.5em;
+	margin: 3% 1%;
 }
 
 

@@ -365,6 +365,88 @@ div#board h6 {
   background-color: #FFFBFC !important;
 }
 
+.project {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: url("../img/backgrounds/weefs-01.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.project {
+  overflow: hidden;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: relative;
+}
+
+.button_pro {
+  background-color: #FBB844;
+  border: none;
+  color: white;
+  padding: 0.0625em 1.875em;
+  text-align: center;
+  margin: 3.75em 1.25em;
+  cursor: pointer;
+  font-family: "Roboto";
+  font-size: 1.875em;
+  font-weight: 300;
+  transition: all 0.5s;
+  border: 1px solid #FBB844;
+}
+.button_pro:hover, .button_pro:focus {
+  background-color: transparent;
+  color: #FBB844;
+  border: 1px solid #FBB844;
+}
+
+#pro_img {
+  margin: 1% 1%;
+  width: 12.5em;
+  height: 6.25em;
+}
+
+.pro_blue {
+  background-color: #4C88A2;
+  padding: 0.1875em 0em;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+.pro_blue h4 {
+  color: #FCF8FB !important;
+}
+
+.pro_yellow {
+  background-color: #FBB844;
+  padding: 0.1875em 0em;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+.pro_yellow h4 {
+  color: #FCF8FB !important;
+}
+
+.sponzori h5 {
+  color: #FBB844 !important;
+}
+
+.gen_pro {
+  width: 12.5em;
+  height: 12.5em;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.pp_pro {
+  width: 12.5em;
+  height: 12.5em;
+  margin: 3% 1%;
+}
+
 @media (max-width: 1240px) {
   /*it's not the standard one, but needs to exist because of the title on the index page */
   #title_lbg_bg h2 {
