@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	      xmlns:fb="http://ogp.me/ns/fb#">
+<head>
+
+
+	<title>BEST Beograd - Udruženje studenata tehnike Evrope</title>
+
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+		    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		    <meta name="viewport" content="width=device-width, initial-scale=1">
+		    <meta name="description" content="">
+		    <meta name="keywords" content="">
+		    <meta name="author" content="BEST Belgrade 2017">
+		    <meta property="og:image" content="img/">
+
+		    <!-- Style -->
+
+		    <link rel="stylesheet" type="text/css" href="css/main.css">
+		    <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.css">
+		    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.css"  media="screen,projection"/>
+
+		    <!-- Icons Font -->
+    		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	   <script src="js/jquery-numerator.js"></script>
+	   <script src="js/board.js"></script>
+
+	   <!-- Gallery -->
+    		<link rel="stylesheet" href="owlcarousel2/owl.carousel.min.css">
+    		<link rel="stylesheet" href="owlcarousel2/owl.theme.default.min.css">
+			<link rel="stylesheet" href="owlcarousel2/owl.theme.default.min.css">
+			<script src="owlcarousel2/jquery.min.js"></script>
+    		<script src="owlcarousel2/owl.carousel.js"></script>
+
+
+</head>
+<body class="news_template">
+
+<section class="about_best">
+
+  <nav>
+		    <div class="nav-wrapper">
+		      <a href="index.html" class="brand-logo"><img src="img/BEST_BG_Logo.png"></a>
+		      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+		      <ul class="right hide-on-med-and-down ">
+
+		        <li id="active_tab_nav" class="nav_tab"><a class="dropdown-button active" data-activates="dropdown1" >O NAMA</a>
+		        	<ul id="dropdown1" class="dropdown-content">
+		        	  <li class="divider"></li>
+		        	  <li class="divider"></li>
+		        	  <li class="divider"></li>
+					  <li><a href="#about_best" class="drop-con-item">BEST</a></li>
+					  <li><a href="#about_best_bg">BEST BEOGRAD</a></li>
+					  <li class="divider"></li>
+					  <li><a href="#io">IO</a></li>
+					</ul>
+		        </li>
+		        <li class="nav_tab"><a href="news.html">AKTUELNO</a></li>
+		        <li class="nav_tab"><a class="dropdown-button" href="#!" data-activates="dropdown2">PROJEKTI</a>
+		        	<ul id="dropdown2" class="dropdown-content">
+		        	  <li class="divider"></li>
+		        	  <li class="divider"></li>
+		        	  <li class="divider"></li>
+		        	  <li><a href="#!">EBEC</a></li>
+					  <li><a href="#!">CODE BEYOND</a></li>
+					  <li><a href="#!">BDW</a></li>
+					  <li><a href="#!">JOB FAIR</a></li>
+					  <li><a href="#!">KURS</a></li>
+					  <li class="divider"></li>
+					  <li><a href="#!">GA</a></li>
+
+					</ul>
+		        </li>
+		        <li class="nav_tab"><a href="#">UČLANI SE</a></li>
+		        <li class="nav_tab"><a class="dropdown-button" href="#" data-activates="dropdown3">PARTNERI</a>
+		        	<ul id="dropdown3" class="dropdown-content">
+		        	  <li class="divider"></li>
+		        	  <li class="divider"></li>
+		        	  <li class="divider"></li>
+					  <li><a href="#!">GODIŠNJI</a></li>
+					  <li><a href="#!">PARTNERSKE ORGANIZACIJE</a></li>
+					  <li class="divider"></li>
+					  <li><a href="#!">MEDIJSKI POKROVITELJI</a></li>
+					
+		        
+
+					</ul>
+		        </li>
+
+		        <li class="nav_tab"><a href="#">KONTAKT</a></li>
+		        
+	        	<li id="log_lang_tab">
+	        		<a href="#" >LOG IN</a>
+	        		<a href="#">ENG</a>
+
+	        	</li>
+		        	
+		      </ul>
+
+		      <!-- mobile sidebar -->
+
+		      <ul class="side-nav" id="mobile-demo">
+		      	<li><a href="index.html" style="text-align: center;"><img src="img/BEST_BG_Logo.png"></a></li>
+		        <li>
+		        	<a href="#" id="dropdown_m">O NAMA</a>
+		        	<ul id="theList">
+		        		
+		        	</ul>
+		        </li>
+		        <li><a href="news.html">AKTUELNO</a></li>
+		        <li><a href="#" id="dropdown_m_projects">PROJEKTI</a></li>
+		        	<ul id="theList_projects"></ul>
+		        <li><a href="#">UČLANI SE</a></li>
+		        <li>
+		        	<a href="#" id="dropdown_m_partners">PARTNERI</a>
+		        	<ul id="theList_partners">
+		        		
+		        	</ul>
+		        </li>
+		        <li><a href="#">KONTAKT</a></li>
+		        <li><a href="#">LOG IN</a></li>
+
+		        <div id="social_mobile">
+		        	<a href="https://www.instagram.com/best_belgrade/"><i class="fa fa-instagram"></i></a>
+		        	<a href="https://www.linkedin.com/company-beta/11020375/"><i class="fa fa-linkedin"></i></a>
+		        	<a href="https://twitter.com/best_bg?lang=en"><i class="fa fa-twitter"></i></a>
+		        	<a href="https://www.youtube.com/channel/UCqT8Cw62CbiS_hJ00t7n9Hw"><i class="fa fa-youtube"></i></a>
+		        	<a href="https://www.facebook.com/best.beograd/"><i class="fa fa-facebook"></i></a>
+		        </div>
+		        
+		      </ul>
+		    </div>
+  		</nav>
+
+
+	<div class="news_content">
+
+	<div class="row" id="news_title">
+	<div class="col-sm-5" align="left">
+		<h4>BEST</h4>
+		<h7 class="share_title">objavljeno 19.09.2017</h7>
+	</div>
+	<div class="col-sm-2"></div>
+	<div class="col-sm-5" align="right">
+		<h7 class="share_title">SHARE THIS POST</h7>
+		<div id="news_social">
+			<img src="img/fb_logo.png">
+			<img src="img/linkedin_logo.png">
+			<img src="img/twitter_logo.png">
+		</div>
+	</div>
+	</div>
+	<div class="news_text myBox">
+		
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lectus metus, faucibus et turpis eget, vehicula hendrerit orci. Pellentesque sodales congue volutpat. Nulla elit ex, semper in nibh eget, rhoncus pharetra nibh. Etiam tincidunt mattis gravida. In id augue nibh. Duis dictum ornare molestie. Nunc non libero sed mi aliquet pretium nec egestas nisi. Quisque at ju</p>
+
+		<p>sto euismod mauris vulputate volutpat nec at massa. Etiam sed lacinia nunc, quis dapibus quam. Maecenas viverra libero eu nibh rhoncus interdum. Duis congue tempor lectus sit amet vestibulum. Duis sagittis dolor eu eros pretium, vel laoreet orci posuere. Phasellus consequat felis in nulla facilisis, ut tincidunt ex mattis.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lectus metus, faucibus et turpis eget, vehicula hendrerit orci. Pellentesque sodales congue volutpat. Nulla elit ex, semper in nibh eget, rhoncus pharetra nibh. Etiam tincidunt mattis gravida. In id augue nibh. Duis dictum ornare molestie. Nunc non libero sed mi aliquet pretium nec egestas nisi. Quisque at justo eui</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lectus metus, faucibus et turpis eget, vehicula hendrerit orci. Pellentesque sodales congue volutpat. Nulla elit ex, semper in nibh eget, rhoncus pharetra nibh. Etiam tincidunt mattis gravida. In id augue nibh. Duis dictum ornare molestie. Nunc non libero sed mi aliquet pretium nec egestas nisi. Quisque at justo eui</p>
+		</div>
+		<div class="container" style="padding-top:35px; width:70%">
+		<div class="owl-carousel owl-theme" >
+		            
+        <div class="item">    
+          <img src="img/macka.jpg">            
+        </div> 
+        <div class="item">    
+          <img src="img/macka.jpg">            
+        </div><div class="item">    
+          <img src="img/macka.jpg">            
+        </div><div class="item">    
+          <img src="img/macka.jpg">            
+        </div><div class="item">    
+          <img src="img/macka.jpg">            
+        </div><div class="item">    
+          <img src="img/macka.jpg">            
+        </div><div class="item">    
+          <img src="img/macka.jpg">            
+        </div>
+          </div>
+          </div>
+       
+     
+
+
+	
+	</div>
+</section>
+
+<footer class="news_footer">
+	<div class="col-sm-12" align="center">
+	<p>© BEST Belgrade 2017</p>
+</div>
+
+</footer>
+
+        	<div class="social_menu_other">
+	  			<div>
+				  
+				    <ul>
+				      <li>
+				      	<a class="btn-floating " href="https://www.instagram.com/best_belgrade/">
+				      		<i class="fa fa-instagram"></i>
+				      	</a>
+				      </li>
+				      <li>
+				      	<a class="btn-floating" href="https://www.linkedin.com/company-beta/11020375/">
+				      		<i class="fa fa-linkedin-square"></i>
+				      	</a>
+				      </li>
+
+				      <li>
+				      	<a class="btn-floating" href="https://twitter.com/best_bg?lang=en">
+				      	<i class="fa fa-twitter-square"></i>
+				      	</a>
+				      </li>
+				      <li>
+				      	<a class="btn-floating" href="https://www.youtube.com/channel/UCqT8Cw62CbiS_hJ00t7n9Hw"><i class="fa fa-youtube-square"></i>
+				      	</a>
+				      </li>
+				      <li>
+				      	<a class="btn-floating" href="https://www.facebook.com/best.beograd/"><i class="fa fa-facebook-square"></i>
+				      	</a>
+				      </li>
+				    </ul>
+
+				</div>   
+		        
+		    </div>
+		<script>
+              $(document).ready(function() {
+                var owl = $('.owl-carousel');
+                owl.owlCarousel({
+                  items: 3,
+                  loop: false,
+                  margin: 10,
+                  nav: true,
+                  dots: false,
+                  responsiveClass:true,
+                  responsive:{
+                      0:{
+                         items:1,
+              
+                      },
+                     
+                      900:{
+                          items:3,
+                       }
+                 }
+                });
+               $( ".owl-prev").html('<img src="img/news/galleryArrowLeft.png" style="height:40px; padding-right:-50px">');
+			   $( ".owl-next").html('<img src="img/news/galleryArrowRight.png"  style="height:40px">');
+              })
+            </script>
+            <script type="text/javascript">
+            	
+            </script>
+		<script type="text/javascript" src="materialize/js/bin/materialize.min.js"></script>
+		<script type="text/javascript" srce="bootstrap/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/custom.js"></script>
+
+
+</body>
+</html>
