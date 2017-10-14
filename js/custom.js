@@ -19,6 +19,8 @@ $(window).scroll(function() {
 
 
 
+
+
 // toggle sidebar on mobile
 $( document ).ready(function(){
 
