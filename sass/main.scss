@@ -17,8 +17,9 @@ $body_img: (
 		'index': '../img/backgrounds/indexBack.png',
 		'news' : '../img/backgrounds/news.png',
 		'best' : '../img/backgrounds/Downloads-01.png',
-		'bestbg' : '../img/backgrounds/news.png',
+		
 		'project' : '../img/backgrounds/weefs-01.png'
+		
 	);
 $roboto:"Roboto";
 
@@ -567,6 +568,38 @@ div#board{
 	height: 12.5em;
 	margin: 3% 1%;
 }
+
+// ------ join us ------
+
+
+
+div.join_us{
+	background-image: url('../img/backgrounds/news.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 80vh;
+
+	.join_us_txt {
+		padding-top: 60px;
+		padding-left: 80px;
+		padding-right: 80px;
+	}
+
+	.join_us_form {
+		position: center;
+		input{
+			width:200px;
+			border:solid 1px $yellow;
+			
+		}
+	}
+
+
+}
+
+
 
 
 
