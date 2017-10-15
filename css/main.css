@@ -447,6 +447,11 @@ div#board h6 {
   margin: 3% 1%;
 }
 
+#join_us {
+  overflow-x: hidden;
+  background-color: #fffbfc;
+}
+
 div.join_us {
   background-image: url("../img/backgrounds/news.png");
   background-position: center;
@@ -461,11 +466,21 @@ div.join_us .join_us_txt {
   padding-right: 80px;
 }
 div.join_us .join_us_form {
-  position: center;
+  position: fixed;
+  right: 300px;
 }
-div.join_us .join_us_form input {
-  width: 200px;
+div.join_us .join_us_form input, div.join_us .join_us_form select {
+  width: 300px;
   border: solid 1px #FBB844;
+}
+div.join_us .join_us_form input .btn_form, div.join_us .join_us_form select .btn_form {
+  border: solid 1px #FBB844 !important;
+  border-radius: 0% !important;
+  color: #FBB844 !important;
+}
+div.join_us .join_us_form input .btn_form:hover, div.join_us .join_us_form select .btn_form:hover {
+  background-color: #FBB844 !important;
+  color: #FCF8FB;
 }
 
 @media (max-width: 1240px) {
