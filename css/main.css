@@ -365,6 +365,75 @@ div#board h6 {
   background-color: #FFFBFC !important;
 }
 
+.main_news_footer {
+  padding-top: 45px;
+}
+
+.news_template {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: url();
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.news_text {
+  overflow-x: hidden;
+}
+
+div.news_content {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+}
+div.news_content h4 {
+  width: 100%;
+  font-family: "Roboto";
+}
+div.news_content p {
+  font-family: "Roboto";
+}
+div.news_content #news_social img {
+  height: 40px;
+  padding-top: 10px;
+}
+
+.myBox {
+  border: none;
+  padding: 5px 5px 15px 5px;
+  width: 100%;
+  height: 200px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  width: 2px;
+  border: 1px dotted pink;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4C88A2;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4C88A2;
+}
+
+.news_footer {
+  padding-top: 25px;
+}
+
 .project {
   width: 100%;
   height: 100%;
@@ -447,6 +516,11 @@ div#board h6 {
   margin: 3% 1%;
 }
 
+#join_us {
+  overflow-x: hidden;
+  background-color: #fffbfc;
+}
+
 div.join_us {
   background-image: url("../img/backgrounds/news.png");
   background-position: center;
@@ -461,17 +535,31 @@ div.join_us .join_us_txt {
   padding-right: 80px;
 }
 div.join_us .join_us_form {
-  position: center;
+  position: fixed;
+  right: 300px;
 }
-div.join_us .join_us_form input {
-  width: 200px;
+div.join_us .join_us_form input, div.join_us .join_us_form select {
+  width: 300px;
   border: solid 1px #FBB844;
+}
+div.join_us .join_us_form input .btn_form, div.join_us .join_us_form select .btn_form {
+  border: solid 1px #FBB844 !important;
+  border-radius: 0% !important;
+  color: #FBB844 !important;
+}
+div.join_us .join_us_form input .btn_form:hover, div.join_us .join_us_form select .btn_form:hover {
+  background-color: #FBB844 !important;
+  color: #FCF8FB;
 }
 
 @media (max-width: 1240px) {
   /*it's not the standard one, but needs to exist because of the title on the index page */
   #title_lbg_bg h2 {
     font-size: 3em !important;
+  }
+
+  .owl-carousel .owl-nav .owl-next {
+    padding: 100px 50p;
   }
 }
 @media (max-width: 1060px) {
@@ -495,6 +583,15 @@ div.join_us .join_us_form input {
   ul#dropdown1 li a, ul#dropdown2 li a, ul#dropdown3 li a {
     width: 100px !important;
     font-size: 12px !important;
+  }
+
+  .news_template {
+    overflow: scroll !important;
+  }
+
+  .myBox {
+    height: 100%;
+    overflow: hidden;
   }
 }
 @media (max-width: 900px) {
@@ -547,6 +644,10 @@ div.join_us .join_us_form input {
   #title_lbg_bg h2 {
     padding-left: 2% !important;
     font-size: 1.5em !important;
+  }
+
+  .share_title {
+    font-size: 1em !important;
   }
 
   .owl-nav {

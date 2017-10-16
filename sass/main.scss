@@ -467,6 +467,95 @@ div#board{
     }
 }
 
+.main_news_footer{
+ 	padding-top:45px;
+}
+
+
+
+
+// --------- news_template --------
+
+.news_template{
+
+	@include body_background(map-get($body_img, 'news_template')); 
+
+	
+}
+
+.news_text{
+	overflow-x: hidden;	
+	
+}
+
+div.news_content{
+		padding-left:10%;
+		padding-right:10%;
+		padding-top:2%;
+	
+	h4{
+		
+		
+		width: 100%;
+		font-family: $roboto;
+		}
+
+	p{
+		
+		font-family: $roboto;
+	
+	}
+
+	div.row#news_title{
+		
+	}
+
+
+	#news_social{
+		img{
+			height:40px;
+			padding-top:10px;
+		}
+	}
+
+
+}
+
+.myBox {
+border: none;
+padding: 5px 5px 15px 5px; 
+width: 100%;
+height: 200px;
+overflow-y: scroll;
+overflow-x: hidden;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+width: 12px;
+height: 12px;
+}
+
+::-webkit-scrollbar-track {
+border-radius: 10px;
+width: 2px;
+border: 1px dotted pink;
+}
+
+::-webkit-scrollbar-thumb {
+background: $blue; 
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: $blue;  
+}
+
+.news_footer{
+ 	padding-top:25px;
+}
+
+
 
 
 
@@ -571,7 +660,10 @@ div#board{
 
 // ------ join us ------
 
-
+#join_us{
+	overflow-x: hidden;
+	background-color: #fffbfc;
+}
 
 div.join_us{
 	background-image: url('../img/backgrounds/news.png');
@@ -581,6 +673,9 @@ div.join_us{
 	width: 100%;
 	height: 80vh;
 
+
+
+
 	.join_us_txt {
 		padding-top: 60px;
 		padding-left: 80px;
@@ -588,10 +683,21 @@ div.join_us{
 	}
 
 	.join_us_form {
-		position: center;
-		input{
-			width:200px;
+		position: fixed;
+		right: 300px;
+		input, select{
+			width:300px;
 			border:solid 1px $yellow;
+		.btn_form{
+			border:solid 1px $yellow !important;
+			border-radius: 0% !important;
+			color:$yellow !important;
+			&:hover{
+				background-color:$yellow !important;
+				color: $light_primary;
+
+			};
+		}	
 			
 		}
 	}
@@ -608,6 +714,14 @@ div.join_us{
 @media(max-width: 1240px){ /*it's not the standard one, but needs to exist because of the title on the index page */
 	#title_lbg_bg h2{
 		font-size: 3em !important;
+	}
+
+	.owl-carousel {
+		.owl-nav{
+			.owl-next{
+			padding: 100px 50p
+			}
+		}
 	}
 }
 
@@ -637,6 +751,14 @@ div.join_us{
 			}
 		}
 	
+	}
+
+	.news_template{
+		overflow:scroll!important;
+	}
+	.myBox{
+		height:100%;
+		overflow:hidden;
 	}
 }
 
@@ -702,6 +824,10 @@ div.join_us{
 			font-size: 1.5em!important;
 		}
 		
+	}
+
+	.share_title{
+		font-size:1em!important;
 	}
 
 
