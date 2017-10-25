@@ -410,6 +410,20 @@ div#board h6 {
   height: 6.25em;
 }
 
+.img_square_pro {
+  position: relative;
+  transition: all 0.5s;
+  box-shadow: 3px 3px 5px #888888;
+  opacity: 1;
+}
+.img_square_pro:hover {
+  opacity: 0.2;
+}
+
+.img_shadow_pro {
+  box-shadow: 3px 3px 5px #888888;
+}
+
 .pro_blue {
   background-color: #4C88A2;
   padding: 0.1875em 0em;
@@ -444,7 +458,15 @@ div#board h6 {
 .pp_pro {
   width: 12.5em;
   height: 12.5em;
-  margin: 3% 1%;
+  margin: 3% 0%;
+}
+
+div#org_tim img {
+  width: 9.375em;
+  height: 9.375em;
+}
+div#org_tim h6 {
+  padding-top: 10%;
 }
 
 @media (max-width: 1240px) {

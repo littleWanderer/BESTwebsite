@@ -251,7 +251,7 @@ div#title{
 }
 
 
-//-- background ----------------------------------------------------------
+//--------------------------- background --------------------------
 
 
 
@@ -525,6 +525,22 @@ div#board{
 
 }
 
+.img_square_pro{
+	
+	position: relative;
+	transition: all 0.5s;
+	box-shadow: 3px 3px 5px #888888;
+	opacity: 1;
+	&:hover{
+		opacity:0.2;
+
+	};
+}
+
+.img_shadow_pro{
+	box-shadow: 3px 3px 5px #888888;
+}
+
 .pro_blue{
 	background-color: $blue;
 		padding: 0.1875em 0em;
@@ -565,8 +581,25 @@ div#board{
 .pp_pro{
 	width: 12.5em;
 	height: 12.5em;
-	margin: 3% 1%;
+	margin: 3% 0%;
+
 }
+
+
+div#org_tim{
+	img{
+		width: 9.375em;
+		height: 9.375em;
+
+		}
+
+	h6{
+	padding-top: 10%;
+	}
+}
+
+
+
 
 
 

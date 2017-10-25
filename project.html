@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
+	<html xmlns="http://www.w3.org/1999/xhtml"
 	      xmlns:fb="http://ogp.me/ns/fb#">
-<head>
-		<title>BEST Beograd - Udruženje studenata tehnike Evrope</title>
 
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<head>
+			<title>BEST Beograd - Udruženje studenata tehnike Evrope</title>
+
+			 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
 		    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 		    <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,26 +18,24 @@
 
 		    <link rel="stylesheet" type="text/css" href="css/main.css">
 		    <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.css">
-		    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.css"  media="screen,projection"/>
+		     <link type="text/css" rel="stylesheet" href="materialize/css/materialize.css"  media="screen,projection"/>
 
 		    <!-- Icons Font -->
     		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      
+     			<!-- Gallery -->
+    		<link rel="stylesheet" href="owlcarousel2/owl.carousel.min.css">
+    		<link rel="stylesheet" href="owlcarousel2/owl.theme.default.min.css">
+			<link rel="stylesheet" href="owlcarousel2/owl.theme.default.min.css">
+			<script src="owlcarousel2/jquery.min.js"></script>
+    		<script src="owlcarousel2/owl.carousel.js"></script>
 
-			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-	   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-
+    	<script src="js/project.js"></script>
+    	<script src="js/project_owl.js"></script>
 
 
-	   <script src="js/board.js"></script>
-
-
-
-
-
-</head>
-<body>
+		</head>
 <section class="project">
 <div class="navbar-fixed">
   		<nav >
@@ -143,13 +142,14 @@
 <section class="row">
 <div align="center"  class="col-sm-12">
 <div class="proba">
-<button id="clickme" class="button_pro active" onclick="myFunction();">2017</button>
+<button id="clickme" class="button_pro active" onclick="Project();">2017</button>
 
-<button id="clickme" class="button_pro" onclick="myFunction1();">2016</button>
+<button id="clickme" class="button_pro" onclick="Project1();">2016</button>
 
-<button id="clickme" class="button_pro" onclick="myFunction2();">2015</button>
+<button id="clickme" class="button_pro" onclick="Project2();">2015</button>
 
-<button id="clickme" class="button_pro" onclick="myFunction3();">2014</button>
+<button id="clickme" class="button_pro" onclick="Project3();">2014</button>
+
 
 </div>
 </div>
@@ -157,16 +157,15 @@
 
 <section class="row">
 
-		<div class="col-sm-4" align="center"><img id="pro_img" src="img/macka.jpg"></div>
-		<div class="col-sm-4" align="center" id="about_best"><h4>IME PROJEKTA</h4></div>
-		<div class="col-sm-4"></div>
+		<div class="col-sm-3"  align="center"><img class="img_shadow_pro" id="pro_img" src="img/macka.jpg"></div>
+		<div class="col-sm-6" align="center" id="about_best"><h4>IME PROJEKTA</h4></div>
+		<div class="col-sm-3"></div>
+		
 
 </section>
 
-
-
-<section>
-<div class="pro_blue" class="row">
+<section class="row">
+<div class="pro_blue">
 	<div align="center">
 <h4>O PROJEKTU</h4>
 </div>
@@ -185,23 +184,38 @@
 
 		</div>
 </section>
-
 <section>
-<div class="pro_yellow" class="row">
+<div class="pro_yellow">
 	<div align="center">
 <h4>GALERIJA</h4>
 </div>
 </div>
+	
+
+  		<div class="container">
+  		<div class="owl-carousel owl-theme">
+		            
+    <div class="item"><img class="pp_pro img_shadow_pro" src="img/macka.jpg" id="gal"></div>
+    <div class="item"><img class="pp_pro img_shadow_pro" src="img/macka.jpg" id="gal1"></div>
+    <div class="item"><img class="pp_pro img_shadow_pro" src="img/macka.jpg" id="gal2"></div>
+    <div class="item"><img class="pp_pro img_shadow_pro" src="img/macka.jpg" id="gal3"></div>
+    <div class="item"><img class="pp_pro img_shadow_pro" src="img/macka.jpg" id="gal4"></div>
+    
+
+		</div>
+		</div>		
+
+
 </section>
 
 <section class="row">
-<div class="pro_blue" class="row">
+<div class="pro_blue">
 	<div align="center">
 <h4>ORGANIZACIONI TIM</h4>
 </div>
 </div>
 
-<div id="board">
+<div id="org_tim">
 
 
 	<section>
@@ -210,7 +224,7 @@
 
 	<div class="col-sm-2" align="center">
 	<div class="circle" onmouseover="prikazi('li_n', 'li_k')" onmouseout="sakrij('li_n', 'li_k') ">
-		<img class="img_square"  src="img/macka.jpg" id="image">
+		<img class="img_square_pro"  src="img/macka.jpg" id="image">
 		<a href="www.linkedin.com" id="a_li_n"><i class="fa fa-linkedin " id="li_n"></i></a>
 		<a href="www.linkedin.com" id="a_li_k"><i class="fa fa-envelope " id="li_k"></i></a>
 	</div>
@@ -222,7 +236,7 @@
 
 	<div class="col-sm-2" align="center">
 	<div class="circle" onmouseover="prikazi('li_t', 'li_m')" onmouseout="sakrij('li_t', 'li_m')">
-		<img class="img_square" src="img/macka.jpg" id="image1">
+		<img class="img_square_pro" src="img/macka.jpg" id="image1">
 		<a href="www.linkedin.com" id="a_li_t"><i class="fa fa-linkedin" id="li_t"></i></a>
 		<a href="www.linkedin.com" id="a_li_m"><i class="fa fa-envelope" id="li_m"></i></a>
 	</div>
@@ -233,7 +247,7 @@
 			
 	<div class="col-sm-2" align="center">
 	<div class="circle" onmouseover="prikazi('li_q', 'li_w')" onmouseout="sakrij('li_q', 'li_w')">
-		<img class="img_square" src="img/macka.jpg" id="image2">
+		<img class="img_square_pro" src="img/macka.jpg" id="image2">
 		<a href="www.linkedin.com" id="a_li_q"><i class="fa fa-linkedin" id="li_q"></i></a>
 		<a href="www.linkedin.com" id="a_li_w"><i class="fa fa-envelope" id="li_w"></i></a>
 	</div>
@@ -245,7 +259,7 @@
 			
 	<div class="col-sm-2" align="center">
 	<div class="circle" onmouseover="prikazi('li_a', 'li_s')" onmouseout="sakrij('li_a', 'li_s')">
-		<img class="img_square" src="img/macka.jpg" id="image3">
+		<img class="img_square_pro" src="img/macka.jpg" id="image3">
 		<a href="www.linkedin.com" id="a_li_a"><i class="fa fa-linkedin" id="li_a"></i></a>
 		<a href="www.linkedin.com" id="a_li_s"><i class="fa fa-envelope" id="li_s"></i></a>
 	</div>
@@ -260,7 +274,7 @@
 	
 	<div class="col-sm-2" align="center">
 	<div class="circle" onmouseover="prikazi('li_e', 'li_r')" onmouseout="sakrij('li_e', 'li_r')">
-		<img class="img_square" src="img/macka.jpg" id="image4">
+		<img class="img_square_pro" src="img/macka.jpg" id="image4">
 		<a href="www.linkedin.com" id="a_li_e"><i class="fa fa-linkedin" id="li_e"></i></a>
 		<a href="www.linkedin.com" id="a_li_r"><i class="fa fa-envelope" id="li_r"></i></a>
 	</div>
@@ -272,7 +286,7 @@
 			
 	<div class="col-sm-2" align="center">
 	<div class="circle" onmouseover="prikazi('li_j', 'li_l')" onmouseout="sakrij('li_j', 'li_l')">
-		<img class="img_square" src="img/macka.jpg" id="image5">
+		<img class="img_square_pro" src="img/macka.jpg" id="image5">
 		<a href="www.linkedin.com" id="a_li_j"><i class="fa fa-linkedin" id="li_j"></i></a>
 		<a href="www.linkedin.com" id="a_li_l"><i class="fa fa-envelope" id="li_l"></i></a>
 	</div>
@@ -292,7 +306,7 @@
 </section>
 
 <section>
-<div class="pro_yellow" class="row">
+<div class="pro_yellow">
 	<div align="center">
 <h4>POKROVITELJI</h4>
 </div>
@@ -301,22 +315,31 @@
 	<h5>GENERALNI POKROVITELJ</h5>
 </div>
 <div align="center">
-	<img class="gen_pro" src="img/macka1.jpg">
+	<img class="gen_pro img_shadow_pro" id="gen" src="img/macka.jpg">
 </div>
 
 <div align="center" class="sponzori">
-	<h5>PROJEKAT PODRZALI</h5>
+	<h5>PROJEKAT PODRŽALI</h5>
 </div>
-<div align="center">
-	<img class="pp_pro" src="img/macka1.jpg">
-	<img class="pp_pro" src="img/macka1.jpg">
-	<img class="pp_pro" src="img/macka1.jpg">
-	<img class="pp_pro" src="img/macka1.jpg">
 
+  		<div class="container">
+  		<div class="owl-carousel owl-theme">
+		            
+    <div class="item"><img class="pp_pro img_shadow_pro" src="img/macka.jpg" ></div>
+    <div class="item"><img class="pp_pro img_shadow_pro" src="img/macka.jpg" ></div>
+    <div class="item"><img class="pp_pro img_shadow_pro" src="img/macka.jpg" ></div>
+    <div class="item"><img class="pp_pro img_shadow_pro" src="img/macka.jpg" ></div>
+    <div class="item"><img class="pp_pro img_shadow_pro" src="img/macka.jpg" ></div>
+    
 
+		</div>
+		</div>		
 
-</div>
+		
+
 </section>
+
+
 
 <footer>
 	<div class="col-sm-12" align="center">
@@ -326,12 +349,7 @@
 </footer>
 
 
-
-
-
-
-
-	<div class="social_menu_other">
+   	<div class="social_menu_other">
 	  	<div>
 				  
 			<ul>
@@ -365,10 +383,17 @@
 		        
 		    </div>
 		
-		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+
+
+		    </section>
+
+
+		
 		<script type="text/javascript" src="materialize/js/bin/materialize.min.js"></script>
 		<script type="text/javascript" srce="bootstrap/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/custom.js"></script>
-</section>
-</body>
-</html>
+		</body>
+	</html>
+	
+
+		
